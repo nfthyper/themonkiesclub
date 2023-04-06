@@ -621,7 +621,10 @@ const Home = (props: HomeProps) => {
                     <a href="#" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
                   </IconRow>
                 </InfoRow>
-                <CollectionDescription>A collection of NFTs created for the Monkies community! 1000 NFTs roaming the blockchain. One of the biggest collections on Solana. Artwork Created by HyperZ.</CollectionDescription>
+                <CollectionDescription>A collection of NFTs created for the Monkies community! 1000 NFTs roaming the blockchain. One of the biggest collections on Solana. The meta of projects which provide real value and utility to their holders needs a comeback, and we are here to initiate it.
+Secure yourself your 2-in-1 Monkie NFT (animated + PFP) to get access to our innovative benefits, become part of an ever-growing family, participate in the first NFT open-world P2E game with VR compatibility which will be developed in cooperation with a major game development company, earn passive income by listing your Monkie NFTs for rent during the 60-day competition mode in our open-world game and much much more...
+
+Lets change this space for the better!Artwork Created by HyperZ.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
