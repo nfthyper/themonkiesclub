@@ -544,6 +544,7 @@ const Home = (props: HomeProps) => {
     </svg>
   )
   const Twitter = (props) => (
+    <a href="https://twitter.com/o5o_official">
     <svg
       width={28}
       height={23}
@@ -558,6 +559,7 @@ const Home = (props: HomeProps) => {
     </svg>
   )
   const Discord = (props) => (
+      <a href="https://discord.gg/o5o">
     <svg
       width={28}
       height={21}
