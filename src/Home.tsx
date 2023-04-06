@@ -14,6 +14,7 @@ import styled from "styled-components";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import { defaultGuardGroup, network } from "./config";
 
+
 import { MultiMintButton } from "./MultiMintButton";
 //import { MintButton } from "./MintButton";
 import {
@@ -32,6 +33,7 @@ import {
   ParsedPricesForUI,
 } from "./hooks/types";
 import { guardToLimitUtil } from "./hooks/utils";
+
 
 const BorderLinearProgress = styled(LinearProgress)`
   height: 16px !important;
@@ -94,8 +96,10 @@ const Other = styled.div`
 const ImageWrap = styled.div`
   aspect-ratio: 1 / 1;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/2832432/pexels-photo-2832432.png);
+  background-image: url(https://bafybeiclh2unm2nsvfdx2em47gsnik64hzdqwu6dpxyhcpk5syofthhape.ipfs.nftstorage.link/official.png);
   border-radius: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
 `
 const Image = styled.div`
   height: 100%
@@ -517,7 +521,7 @@ const Home = (props: HomeProps) => {
   } else if (prices.payment.filter(({kind}) => kind === "sol").reduce((a, { price }) => a + price, 0)) {
     candyPrice = `◎ ${solCost}`
   } else {
-    candyPrice = "1 NFT"
+    candyPrice = "0.5 ◎"
   }
 
   console.log(candyPrice);
@@ -527,7 +531,7 @@ const Home = (props: HomeProps) => {
       width={30}
       height={30}
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="monkiesclub.com"
       {...props}
     >
       <path
@@ -544,7 +548,7 @@ const Home = (props: HomeProps) => {
       width={28}
       height={23}
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://twitter.com/o5o_official"
       {...props}
     >
       <path
@@ -558,7 +562,7 @@ const Home = (props: HomeProps) => {
       width={28}
       height={21}
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://discord.gg/o5o"
       {...props}
     >
       <path
@@ -598,11 +602,11 @@ const Home = (props: HomeProps) => {
             </Column>
             <Column>
               <Content>
-                <CollectionName>Collection Name</CollectionName>
+                <CollectionName>Monkies Club</CollectionName>
                 <InfoRow>
                 {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
-                    <p>Total items</p>
+                    <p>Total NFTS</p>
                     <p>{candyMachineV3.items.available}{" "}</p>
                   </InfoBox>
                 )} {guardStates.isStarted && wallet.publicKey && (
@@ -617,7 +621,7 @@ const Home = (props: HomeProps) => {
                     <a href="#" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
                   </IconRow>
                 </InfoRow>
-                <CollectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</CollectionDescription>
+                <CollectionDescription>A collection of NFTs created for the Monkies community! 1000 NFTs roaming the blockchain. One of the biggest collections on Solana. Artwork Created by HyperZ.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
