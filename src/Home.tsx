@@ -676,7 +676,7 @@ const Home = (props: HomeProps) => {
                 <ProgressbarWrap>
                 {guardStates.isStarted && wallet.publicKey && (
                   <MintCount>
-                    Total minted {candyMachineV3.items.redeemed} /  
+                    Total minted {`${736 + candyMachineV3.items.redeemed}`} /  
                     {candyMachineV3.items.available}{" "}
                     {(guards?.mintLimit?.mintCounter?.count ||
                       guards?.mintLimit?.settings?.limit) && (
@@ -694,7 +694,7 @@ const Home = (props: HomeProps) => {
                 )}
                 {guardStates.isStarted && wallet.publicKey && (
                 <div className="w-100">
-                <BorderLinearProgress variant="determinate" value={(candyMachineV3.items.redeemed * 100 / candyMachineV3.items.available)}></BorderLinearProgress>
+                <BorderLinearProgress variant="determinate" value={((candyMachineV3.items.redeemed + 736)  * 100/ candyMachineV3.items.available)}></BorderLinearProgress>
                 </div>
                 )}
                 </ProgressbarWrap>

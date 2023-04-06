@@ -62,6 +62,7 @@ export const CTAButton = styled.button`
   line-height: 150%;
   text-transform: uppercase;
   background: none;
+
 `;
 export const ButtonWrap = styled.div`
   padding: 16px 24px;
@@ -79,6 +80,19 @@ export const ButtonWrap = styled.div`
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
+  background: #100903;
+  :hover {
+    border: none;
+    outline: none !important;
+    background: #331b05;
+  }
+  :not(disabled) {
+    cursor: pointer;
+  }
+
+  :not(disabled):hover {
+    outline: 1px solid var(--title-text-color);
+  }
 `
 export const NumberWrap = styled.div`
   display: flex;
