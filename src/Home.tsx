@@ -526,12 +526,12 @@ const Home = (props: HomeProps) => {
 
   console.log(candyPrice);
   // Icons
-  const Globe = (props) => (
+   const Globe = (props) => (
     <svg
       width={30}
       height={30}
       fill="none"
-      xmlns="monkiesclub.com"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
@@ -544,12 +544,11 @@ const Home = (props: HomeProps) => {
     </svg>
   )
   const Twitter = (props) => (
-  
     <svg
       width={28}
       height={23}
       fill="none"
-      xmlns="https://twitter.com/o5o_official"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
@@ -559,12 +558,11 @@ const Home = (props: HomeProps) => {
     </svg>
   )
   const Discord = (props) => (
-     
     <svg
       width={28}
       height={21}
       fill="none"
-      xmlns="https://discord.gg/o5o"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
