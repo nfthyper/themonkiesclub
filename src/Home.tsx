@@ -677,7 +677,7 @@ const Home = (props: HomeProps) => {
                 {guardStates.isStarted && wallet.publicKey && (
                   <MintCount>
                     Total minted {`${736 + candyMachineV3.items.redeemed}`} /  
-                    {candyMachineV3.items.available}{" "}
+                    1000{" "}
                     {(guards?.mintLimit?.mintCounter?.count ||
                       guards?.mintLimit?.settings?.limit) && (
                         <MintedByYou>
